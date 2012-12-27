@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @workout.name %>
+</p>
+
+<p>
+  <b>Workout date:</b>
+  <%= @workout.workout_date %>
+</p>
+
+<p>
+  <b>Workout type:</b>
+  <%= @workout.workout_type %>
+</p>
+
+<p>
+  <b>Distance:</b>
+  <%= @workout.distance %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @workout.location %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%= @workout.unit %>
+</p>
+
+<p>
+  <b>Subtype:</b>
+  <%= @workout.subtype %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @workout.duration %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @workout.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_workout_path(@workout) %> |
+<%= link_to 'Back', workouts_path %>
