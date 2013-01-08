@@ -8,7 +8,24 @@
 </head>
 <body>
 
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Workout Tracker</a>
+    <ul class="nav">
+      <li><%= link_to "Dashboard", dashboard_path %></li>
+      <li><%= link_to "Log", workouts_path %></li>
+
+    </ul>
+  </div>
+</div>
+
+
+<div class="container">
+
 <%= yield %>
+
+</div>
 
 </body>
 </html>

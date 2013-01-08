@@ -1,6 +1,8 @@
 WorkoutLog::Application.routes.draw do
   resources :workouts
 
+match '/dashboard' => 'workouts#dashboard'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

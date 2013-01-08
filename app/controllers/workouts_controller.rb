@@ -1,8 +1,16 @@
 class WorkoutsController < ApplicationController
+  
+def dashboard
+
+  @workouts = Workout.where("created_at >= ?", Time.now.beginning_of_day)
+
+end
+
+
   # GET /workouts
   # GET /workouts.json
   def index
-    @workouts = Workout.all
+    @workouts = Workout.order("created_at DESC").all
 
     respond_to do |format|
       format.html # index.html.erb
